@@ -35,7 +35,7 @@ export class UserComponent implements OnInit {
   }
     clear(){ //clear localStorage
       localStorage.clear();
-      window.location.replace("https://tenzeniga.github.io/vk-test/");
+      window.location.replace("https://www.multitran.ru/c/m.exe?a=1&SHL=2&a=1&SHL=2");
     }
     logIn(){ //redirect user to authorization page
       let redirect_uri =  'https://tenzeniga.github.io/vk-test/';
