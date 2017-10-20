@@ -35,7 +35,7 @@ export class UserComponent implements OnInit {
   }
     clear(){ //clear localStorage
       localStorage.clear();
-      document.location.href="/vk-test/";
+      document.location.href="https://tenzeniga.github.io/vk-test/";
     }
     logIn(){ //redirect user to authorization page
       let redirect_uri =  'https://tenzeniga.github.io/vk-test/';
