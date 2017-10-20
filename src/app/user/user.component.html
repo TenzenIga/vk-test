@@ -1,0 +1,12 @@
+<button mat-raised-button *ngIf='!data' (click)='logIn()' color="accent">Авторизоваться</button>
+<button mat-raised-button *ngIf='data' (click)='clear()' color="warn">Выйти</button>
+<ol *ngIf="data">
+  <mat-card class="example-card" *ngFor="let item of data['items']">
+    <mat-card-header>
+      <mat-card-title>
+        <a mat-raised-button (click)="showUser(item)">{{item['first_name'] + " " + item['last_name'] }}</a>
+      </mat-card-title>
+    </mat-card-header>
+    <img class="profile-image" mat-card-image [src]="item['photo_100']">
+  </mat-card>
+</ol>
